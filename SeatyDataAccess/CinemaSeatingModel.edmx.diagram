@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e699b393bc924041955529f4ce025077" Name="Diagram1">
+        <EntityTypeShape EntityType="CinemaSeatingModel.CinemaHall" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaSeatingModel.Film" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaSeatingModel.Order" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaSeatingModel.Seat" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaSeatingModel.Section" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaSeatingModel.sysdiagram" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaSeatingModel.User" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CinemaSeatingModel.Visitor" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="CinemaSeatingModel.FK__Sections__HallID__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaSeatingModel.FK__Films__SectionID__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaSeatingModel.FK__Orders__SectionI__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaSeatingModel.FK__Orders__VisitorI__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="CinemaSeatingModel.FK__Seats__SectionID__5629CD9C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

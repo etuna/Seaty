@@ -1,0 +1,44 @@
+﻿<div ng-controller="SeatsController" ng-init="getSeats()">
+
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3>Reserve the Seat</h3>
+        </div>
+        <form ng-submit="submit()">
+            <div class="modal-body">
+                <label>Visitor name</label>
+                <input type="text" ng-model="user.name" />
+                <label>Visitor surname</label>
+                <input type="text" ng-model="user.surname" />
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+                <input type="submit" class="btn primary-btn" value="Submit" />
+            </div>
+        </form>
+    </script>
+
+    <script type="text/ng-template" id="refuseContent.html">
+    <div class="modal-header">
+        <h3>Seat is FULL!</h3>
+    </div>
+    <form ng-submit="submit()">
+        <div class="modal-body">
+            <label>Sorry this seat is not available to proceed!</label>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+            <!----input type="submit" class="btn primary-btn" value="Submit" /-->
+        </div>
+    </form>
+    </script>
+
+
+    <div ng-repeat="x in seats" ng-class=" x.Status==0 ? 'emptySeat' : 'fullSeat'" ng-click="x.Status==0 ? openModal(0, x.SeatID) : openModal(1, x.SeatID) ">
+        <div>{{x.SeatID}}
+       </div>
+    </div>
+
+</div>
+
+  

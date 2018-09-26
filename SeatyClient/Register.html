@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-cookies.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+
+    <script src="Modules/RegisterModule.js"></script>
+    <script src="Controllers/RegisterController.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Style/register.css" />
+</head>
+
+<body ng-app="RegisterModule" ng-controller="RegisterController">
+
+
+    <div class="container">
+        <div class="innerContainer">
+
+
+            <form name="form" action="" ng-submit="">
+                <input type="text" name="name" placeholder="Name" ng-model="registerModel.name" />
+                <br />
+                <input type="text" name="username" placeholder="Username" ng-model="registerModel.username" />
+                <br />
+                <input type="text" name="password" placeholder="Password" ng-model="registerModel.password" />
+                <br />
+            </form>
+
+            <div class="Buttons">
+                <ul>
+                    <li>
+                        <div class="registerButton" ng-click="register()">
+                            Register
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="cancelButton" ng-click="cancel()">
+                            Cancel
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="errorMessage" style=" color:red;margin:auto; text-align:center;"> {{registerModel.error}}</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿html, body {
+    background-color: black;
+}
+
+
+
+.container {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 3%;
+}
+
+.innerContainer {
+    position: relative;
+    height: 200px;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 40px;
+    padding: 0;
+}
+
+    ul li {
+        padding-top: 20px;
+        font-family: Arial;
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: inline-block;
+        color: white;
+        background-color: dodgerblue;
+        margin: auto;
+    }
+
+form {
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+    form input {
+        outline: 0;
+        border-width: 0 0 2px;
+        margin: auto;
+        font-size: 30px;
+    }
+
+.indexButtons {
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+}
+
+
+.emptySeat {
+    margin: 10px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.fullSeat {
+    margin: 10px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

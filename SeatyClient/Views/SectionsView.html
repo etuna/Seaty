@@ -1,0 +1,10 @@
+﻿
+<div ng-init="getSections()">
+    {{filmName}}
+    <div class="msection" ng-repeat="x in secs" ng-click="setSecAndGo(x.SectionID)">
+        <h1>
+            
+            {{x.SectionID + '  :  ' + x.StartTime + ' - ' +x.EndTime}}
+        </h1> 
+    </div>   
+</div>
